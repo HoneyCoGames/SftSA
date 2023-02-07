@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214228931}
   - component: {fileID: 214228932}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   m_Component:
   - component: {fileID: 431840033}
   - component: {fileID: 431840034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 707271607}
   - component: {fileID: 707271609}
   - component: {fileID: 707271608}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866209136}
   - component: {fileID: 866209137}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 898290880}
   - component: {fileID: 898290879}
   - component: {fileID: 898290878}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -750,7 +750,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 898290879}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1173866132}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &898290879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,7 +811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1118498340}
   - component: {fileID: 1118498341}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173866133}
   - component: {fileID: 1173866132}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ResumeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1235364415}
   - component: {fileID: 1235364416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,7 +1025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1520274259}
   - component: {fileID: 1520274260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1110,7 @@ GameObject:
   - component: {fileID: 2070686166}
   - component: {fileID: 2070686165}
   - component: {fileID: 2070686167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuttoutblock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2144595780}
   - component: {fileID: 2144595781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Isometric Diamond (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
