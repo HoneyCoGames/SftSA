@@ -119,12 +119,51 @@
             //     x = 0;
             //     //Debug.Log("Correction applied to x: "+x);
             // }
+            Debug.Log(transform.position);
+            if(transform.position.x > 1.4)
+            {
+                float xSpeed = -.05f;
+                float ySpeed = y * verticalScrollSpeed;
+                _moveVector = (new Vector2(xSpeed,
+                ySpeed) * Time.deltaTime);
+                transform.Translate(_moveVector, Space.World);
+            }
+            else if(transform.position.x < -1.5)
+            {
+                float xSpeed = .05f;
+                float ySpeed = y * verticalScrollSpeed;
+                _moveVector = (new Vector2(xSpeed,
+                ySpeed) * Time.deltaTime);
+                transform.Translate(_moveVector, Space.World);
+            }
+            else if(transform.position.y > 0.9)
+            {
+                float xSpeed = x * horizontalScrollSpeed;
+                float ySpeed = -0.5f;
 
-            float xSpeed = x * horizontalScrollSpeed;
-            float ySpeed = y * verticalScrollSpeed;
+                _moveVector = (new Vector2(xSpeed,
+                ySpeed) * Time.deltaTime);
+                transform.Translate(_moveVector, Space.World);
+            }
+            else if(transform.position.y < -0.79)
+            {
+                float xSpeed = x * horizontalScrollSpeed;
+                float ySpeed = 0.5f;
 
-            _moveVector = (new Vector2(xSpeed,
-            ySpeed) * Time.deltaTime);
-            transform.Translate(_moveVector, Space.World);
+                _moveVector = (new Vector2(xSpeed,
+                ySpeed) * Time.deltaTime);
+                transform.Translate(_moveVector, Space.World);
+            }
+            else 
+            {
+                float xSpeed = x * horizontalScrollSpeed;
+                float ySpeed = y * verticalScrollSpeed;
+
+                _moveVector = (new Vector2(xSpeed,
+                ySpeed) * Time.deltaTime);
+                transform.Translate(_moveVector, Space.World);
+            }
+
+
         }
     }
