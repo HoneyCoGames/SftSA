@@ -1,13 +1,20 @@
 ﻿title: Year 2009, Age: 9
-tags: Chapter1-start
-position: 27,-203
+tags:
+position: -7,-697
 ---
 Grandpa: Happy birthday, apo! I hope you made a wish when blowing out your candles.
--> [[I sure did!]]
--> [[I can't tell you my wish though. It's a secret.|secret]]
+-> I sure did!
+    <<jump Did>>
+-> I can't tell you my wish though. It's a secret.
+    <<jump Secret>>
 ===
-title: did
-position: 267,-31
+title: Did
+position: 243,-344
+---
+
+===
+title: Secret
+position: -246,-357
 ---
 
 ===
