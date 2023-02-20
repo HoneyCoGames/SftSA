@@ -5,8 +5,8 @@
      
         public float verticalScrollArea = 10f;
         public float horizontalScrollArea = 10f;
-        public float verticalScrollSpeed = 1f;
-        public float horizontalScrollSpeed = 1f;
+        public static float verticalScrollSpeed = .1f;
+        public static float horizontalScrollSpeed = .1f;
        
         public void EnableControls() {
      
@@ -109,7 +109,7 @@
            MoveMe(_xMove, _yMove);
         }
        
-        private void MoveMe(float x, float y) {
+        private void MoveMe(float xx, float yy) {
             //Debug.Log(x);
             // if(y > 1 || y < -1){
             //     y = 0;
@@ -119,11 +119,10 @@
             //     x = 0;
             //     //Debug.Log("Correction applied to x: "+x);
             // }
-            Debug.Log(transform.position);
             if(transform.position.x > 1.4)
             {
                 float xSpeed = -.05f;
-                float ySpeed = y * verticalScrollSpeed;
+                float ySpeed = yy * verticalScrollSpeed;
                 _moveVector = (new Vector2(xSpeed,
                 ySpeed) * Time.deltaTime);
                 transform.Translate(_moveVector, Space.World);
@@ -131,14 +130,14 @@
             else if(transform.position.x < -1.5)
             {
                 float xSpeed = .05f;
-                float ySpeed = y * verticalScrollSpeed;
+                float ySpeed = yy * verticalScrollSpeed;
                 _moveVector = (new Vector2(xSpeed,
                 ySpeed) * Time.deltaTime);
                 transform.Translate(_moveVector, Space.World);
             }
             else if(transform.position.y > 0.9)
             {
-                float xSpeed = x * horizontalScrollSpeed;
+                float xSpeed = xx * horizontalScrollSpeed;
                 float ySpeed = -0.5f;
 
                 _moveVector = (new Vector2(xSpeed,
@@ -147,7 +146,7 @@
             }
             else if(transform.position.y < -0.79)
             {
-                float xSpeed = x * horizontalScrollSpeed;
+                float xSpeed = xx * horizontalScrollSpeed;
                 float ySpeed = 0.5f;
 
                 _moveVector = (new Vector2(xSpeed,
@@ -156,8 +155,8 @@
             }
             else 
             {
-                float xSpeed = x * horizontalScrollSpeed;
-                float ySpeed = y * verticalScrollSpeed;
+                float xSpeed = xx * horizontalScrollSpeed;
+                float ySpeed = yy * verticalScrollSpeed;
 
                 _moveVector = (new Vector2(xSpeed,
                 ySpeed) * Time.deltaTime);
