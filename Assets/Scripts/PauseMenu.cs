@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu() {
         Debug.Log("[DEBUG MSG] Loading Main Menu");
         // Change scene here
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("MainMenu");
     }
     public void QuitGame() {
         Debug.Log("[DEBUG MSG] Quitting Game...");
