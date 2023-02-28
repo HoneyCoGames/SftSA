@@ -5,8 +5,8 @@
      
         public float verticalScrollArea = 10f;
         public float horizontalScrollArea = 10f;
-        public static float verticalScrollSpeed = .1f;
-        public static float horizontalScrollSpeed = .1f;
+        public static float verticalScrollSpeed = .3f;
+        public static float horizontalScrollSpeed = .3f;
        
         public void EnableControls() {
      

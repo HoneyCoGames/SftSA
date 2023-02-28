@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 38f92ee2b04597547955e869ab85f929
+  - enabled: 1
+    path: Assets/Scenes/Sky2.unity
+    guid: 85d7be17177555b4bb3b48870355794f
   m_configObjects: {}
