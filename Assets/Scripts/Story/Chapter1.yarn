@@ -1,20 +1,128 @@
 ﻿title: Year 2009, Age: 9
 tags:
-position: -7,-697
+position: -56,-1122
 ---
-Grandpa: Happy birthday, apo! I hope you made a wish when blowing out your candles.
--> I sure did!
+Lolo: Happy birthday, apo! I hope you made a wish when blowing out your candles.
+-> Stargazer: I sure did!
     <<jump Did>>
--> I can't tell you my wish though. It's a secret.
+-> Stargazer: I can't tell you my wish though. It's a secret.
     <<jump Secret>>
 ===
 title: Did
-position: 243,-344
+position: 131,-891
 ---
-
+Lolo: Well, I sure hope it was a good one. Come upstairs, I have a surprise for you.
+    <<jump FollowUpstairs>>
 ===
 title: Secret
-position: -246,-357
+position: -259,-895
+---
+Lolo: Haha, of course you can't, apo. Just keep that secret close to you. 
+Lolo: Now, there is one more birthday gift that is waiting for you upstairs. 
+Lolo: Come with me.
+    <<jump FollowUpstairs>>
+===
+title: FollowUpstairs
+position: -44,-648
+---
+// <<background_room>>
+You follow your grandpa to your room. 
+It's dark, and there's something set up near the open window looking out into the sea of suburban houses.
+Stargazer: Is that what I think it is?
+Lolo: Yes, your mom has been telling me how much you've learned about space in school recently 
+Lolo: and how you couldn't stop talking about it.
+Lolo: So I thought I would get you this.
+Lolo: Surprise!
+You hug your grandpa.
+It's warm, like a star. But not a dangerous one.
+You know that stars are like billiions of times hotter than a hug.
+But this is nice.
+Stargazer: Thank you lolo!
+Stargazer: This is the best gift I've ever gotten!
+Stargazer: Can you teach me how to user it?
+Lolo: Oh! Here, let me help you with that.
+    <<jump Corvus>>
+===
+title: Corvus
+position: -30,-311
+---
+// <<telescope_view>>
+[i]Use the WASD keys to move around with the telescope. Use the mouse wheel to zoom in and out to get a better view of the stars[/i]
+Stargazer: I can see them now lolo! The stars!
+Grandpa: Mhm. Look over there, you'll see a constellation called Corvus.
+-> Stargazer: What does Corvus mean?
+    <<jump MeaningCorvus>>
+-> Find Corvus.
+    <<jump FindCorvus>>
+===
+title: MeaningCorvus
+position: 224,-464
+---
+Lolo: Corvus means "raven". I know I've seen some that live around the area. 
+    <<jump FindCorvus>>
+===
+title: FindCorvus
+position: 242,-143
+---
+// <<if $corvusFound>>
+Lolo: There it is!
+Stargazer: I found it, but it doesn't look like a bird?
+Lolo: That's because it doesn't actually look like one apo.
+Lolo: They're just shapes that people a long time ago told stories about.
+-> Stargazer: Can you tell me the story of Corvus?
+    <<jump StoryCorvus>>
+-> Stargazer: I wanna find another constellation!
+    <<jump FindNewConstellation>>
+// <<endif>>
+===
+title: StoryCorvus
+position: 120,124
+---
+Lolo: Okay, so there was a god called Apollo,
+Lolo: and he had a raven with white feathers...
+You listen to the rest of the story.
+It was pretty interesting, but also sad.
+Your grandpa also told you more about the constellation itself,
+even the names of the stars in Corvus.
+He explained to you that they meant different parts of a crow in Arabic.
+Eventually, it was time for your grandpa to go home
+so you had to say goodbye.
+But that nigght, you continued to look at the stars above.
+If stars had stories, do you think they would had stories about people too?
+    <<jump Bedtime>>
+===
+title: FindNewConstellation
+position: 381,131
+---
+Lolo: Okay, apo.
+Lolo: But I'm telling you now is that the constellations
+Lolo: won't actually look like what their name implies.
+Lolo: I also don't know how powerful this telescope is,
+Lolo: but if we're lucky we can see a galaxy too.
+Lolo: Wouldn't that be cool?
+Lolo: I think this time of year a constellation called virgo might be visibile.
+Your grandpa helps you find as many constellations as you can.
+You learned that Virgo is what they call a "zodiac constellation" and everyone
+who was ever born has one. Your zodiac is Gemini. Those are the twins.
+Late in the night, you even started seeing shapes in the many stars yourself.
+Now, it was getting late and your grandpa had to go home and you had to go to bed.
+Or at least that's what your mom thought.
+You ended up looking through the telescope some more.
+You wonder if the stars look at the people down on Earth and talk about them
+like people do with constellations.
+    <<jump Bedtime>>
+===
+title: Bedtime
+position: 250,389
+---
+It is way past your bedtime and you have school tomorrow. You should probably go to bed.
+Sweet dreams to you and the stars,
+for stars have dreams too.
+At least that's what you think...
+    <<jump NextDay>>
+===
+title: NextDay
+position: -256,562
 ---
 
 ===
