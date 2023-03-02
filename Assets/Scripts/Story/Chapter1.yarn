@@ -119,6 +119,7 @@ It is way past your bedtime and you have school tomorrow. You should probably go
 Sweet dreams to you and the stars,
 for stars have dreams too.
 At least that's what you think...
+// <<fade_scene>>
     <<jump NextDay>>
 ===
 title: NextDay
