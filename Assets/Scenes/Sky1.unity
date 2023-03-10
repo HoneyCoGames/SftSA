@@ -1892,6 +1892,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 2871438189998346408, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
+      propertyPath: levelToLoad
+      value: Sky1
+      objectReference: {fileID: 0}
     - target: {fileID: 2871438189998346414, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -8,7 +8,6 @@ public class levelChanger : MonoBehaviour
 {
 
     public Animator animator;
-    public string levelToLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -22,18 +21,19 @@ public class levelChanger : MonoBehaviour
         if(MainMenu.changeToLevel == 0)
         {
             FadeToLevel("MainMenu");
-            MainMenu.changeToLevel = -1;
         }
         else if(MainMenu.changeToLevel == 0) {
             FadeToLevel("Sky1");
-            MainMenu.changeToLevel = -1;
         }
     }
 
     public void FadeToLevel(string level) {
         //Scene sc = SceneManager.GetSceneByName(level);
-        Debug.Log("Fading Out!");
+        MainMenu.changeToLevel = -1;
+        Debug.Log("Fading!");
+        animator.Play("fadeOut");
         SceneManager.LoadScene(level);
-        animator.SetTrigger("fadingOut");
+        animator.Play("fadeIn");
+        GetComponent<Animation>()["fadeOut"].time = 0;
     }
 }
