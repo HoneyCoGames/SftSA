@@ -22,7 +22,7 @@ public class levelChanger : MonoBehaviour
         {
             FadeToLevel("MainMenu");
         }
-        else if(MainMenu.changeToLevel == 0) {
+        else if(MainMenu.changeToLevel == 1) {
             FadeToLevel("Sky1");
         }
     }
@@ -30,10 +30,7 @@ public class levelChanger : MonoBehaviour
     public void FadeToLevel(string level) {
         //Scene sc = SceneManager.GetSceneByName(level);
         MainMenu.changeToLevel = -1;
-        Debug.Log("Fading!");
         animator.Play("fadeOut");
         SceneManager.LoadScene(level);
-        animator.Play("fadeIn");
-        GetComponent<Animation>()["fadeOut"].time = 0;
     }
 }
