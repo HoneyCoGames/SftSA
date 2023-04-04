@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-
+    public static bool transition = false;
     public static bool paused = false;
     public GameObject pauseMenuUI;
 
@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu() {
         Debug.Log("[DEBUG MSG] Loading Main Menu");
         // Change scene here
-        SceneManager.LoadScene("MainMenu");
+        MainMenu.changeToLevel = 0;
     }
     public void QuitGame() {
         Debug.Log("[DEBUG MSG] Quitting Game...");
