@@ -12,9 +12,9 @@ ScriptedImporter:
   LastImportHadAnyStrings: 1
   isSuccessfullyParsed: 1
   parseErrorMessages:
-  - '1:0: Error: The node ''Year 2009, Age: 9'' contains illegal characters in its
-    title.
+  - '1:0: Error: The node ''Chapter 1'' contains illegal characters in its title.
 
-    title: Year 2009, Age: 9
+    title:
+    Chapter 1
 
 '
