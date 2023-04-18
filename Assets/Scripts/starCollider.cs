@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class starCollider : MonoBehaviour
 {
+ 
 
-    // Start is called before the first frame update
-    void Start()
+    private void onTriggerEnter2D(Collider2D collision)
     {
-        
+        Debug.Log("Collided!");
     }
-
-    // Update is called once per frame
-    void Update()
+    private void onTriggerStay2D(Collider2D collision)
     {
-        
+        Debug.Log("Still colliding...");
     }
-
-    void OnCollisionEnter2D(Collision2D coll)
-        {
-            coll.collider.enabled = true;
-            // If the Collider2D component is enabled on the collided object
-            if (coll.collider == true)
-            {
-                // Disables the Collider2D component
-                // coll.collider.enabled = false;
-            }
-        }
+    private void onTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("No longer colliding!");
+    }
 
 
 }
