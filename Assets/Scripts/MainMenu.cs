@@ -13,12 +13,13 @@ public class MainMenu : MonoBehaviour
         Debug.Log("[DEBUG MSG] Loading Level 1");
         // Change scene here
         //SceneManager.LoadScene("Sky1");
-        changeToLevel = 1;
+        //changeToLevel = 1;
+        SceneManager.LoadScene("Sky1");
     }
     public void LoadLevel2() {
         Debug.Log("[DEBUG MSG] Loading Level 2");
         // Change scene here
         SceneManager.LoadScene("Sky2");
-        changeToLevel = 2;
+        //changeToLevel = 2;
     }
 }

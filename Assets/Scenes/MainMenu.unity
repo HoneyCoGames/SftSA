@@ -655,11 +655,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2871438189962538071, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2871438189962538071, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2871438189998346414, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
       propertyPath: m_RootOrder
@@ -708,6 +708,10 @@ PrefabInstance:
     - target: {fileID: 2871438189998346415, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
       propertyPath: m_Name
       value: GameTransitions
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871438189998346415, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7397933d7245f74ea06bead03ae0078, type: 3}
